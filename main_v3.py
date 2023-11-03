@@ -44,8 +44,8 @@ file_path = 'saved_voice.pkl'
 with open(file_path, 'rb') as file:
     my_voice_loaded = pickle.load(file)
 # configure elevenlabs voice
-my_voice_loaded.settings.stability = 0.5
-my_voice_loaded.settings.similarity_boost = 0.75
+#my_voice_loaded.settings.stability = 0.5
+#my_voice_loaded.settings.similarity_boost = 0.75
 
 def ask_chatgpt(question, chat_log):
     if chat_log is None:
